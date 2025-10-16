@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Banner.css";
+import banner1 from "./images/banner1.png";
+import banner2 from "src/images/banner2.png";
+import banner3 from "src/images/banner3.png";
+import banner4 from "src/images/banner4.png";
 
 const banners = [
-  "src/images/banner1.png",
-  "src/images/banner2.png",
-  "src/images/banner3.png",
-  "src/images/banner4.png",
+  banner1,
+  banner2,
+  banner3,
+  banner4,
 ];
 
 export default function Banner() {
