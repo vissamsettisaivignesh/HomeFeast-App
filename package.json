@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  
-  "homepage": "https://vissamsettisaivignesh.github.io/HomeFeast-FoodDeliveryApp",
-
+  "homepage": "https://vissamsettisaivignesh.github.io/HomeFeast-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -29,6 +28,4 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
-
-  
 }
