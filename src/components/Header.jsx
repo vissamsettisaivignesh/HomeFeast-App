@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Cart from './Cart';
-
+import cartlogo from "../images/shopping-cart.png";
 
 function Header() {
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function Header() {
         </div>
 
         <div id="cart">
-          <a onClick={cartclick}><img id="cartimg" src="shopping-cart.png" alt="CART" /></a>
+          <a onClick={cartclick}><img id="cartimg" src={cartlogo} alt="CART" /></a>
         </div>
       </div>
 

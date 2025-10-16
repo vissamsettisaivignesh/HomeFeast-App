@@ -1,10 +1,12 @@
 import React from "react";
+import aboutlogo from "../images/logo2.png";
+
 
 function Mainarticle(){
     return(
         <>
         <div id="mainart">
-            <img src="logo2.png" alt="logo"/>
+            <img src={aboutlogo} alt="logo"/>
             <article id="matter">
                 
                     <p>- HomeFeast is more than just a delivery service </p>

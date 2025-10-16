@@ -1,5 +1,6 @@
 import React from "react";
-import  "./About.css"
+import  "./About.css";
+import aboutlogo from "../images/logo2.png";
 
 function About(){
     return(
@@ -8,7 +9,7 @@ function About(){
                 <h1 id="abouttit">HomeFeast : The Authentic Taste of Home</h1>
                 <div id="sidemain">
                     
-                    <img id="aboutimg" src="logo2.png" alt="logo"/>
+                    <img id="aboutimg" src={aboutlogo} alt="logo"/>
                     <article className="sideart">
                         At HomeFeast, our mission is simple: 
                         to bring the authentic, comforting 
