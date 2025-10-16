@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   
-  "homepage": "https://vissamsettisaivignesh.github.io/HomeFeast-FoodDeliveryApp",
+  "homepage": "https://vissamsettisaivignesh.github.io/HomeFeast-App",
 
   "scripts": {
     "dev": "vite",
