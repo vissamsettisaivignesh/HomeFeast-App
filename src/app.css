@@ -1,0 +1,128 @@
+#app{
+    padding-top: 100px;
+    margin: auto;
+    font-family: "Alan Sans", sans-serif;
+    
+}
+#interface{
+    max-width: 600px;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+#fd-carry {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* space between cards */
+    padding: 20px;
+    align-items: stretch;
+}
+
+#fd-full{
+    background:none;
+}
+#fd-full>p{
+    text-align: center;
+    font-size: 40px;
+    width: fit-content;
+    padding: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-family: "Alan Sans", sans-serif;
+    background-color: rgba(224, 223, 223, 0.1);
+}
+
+
+
+#cont-container {
+  
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-items: center;
+  font-family: "Alan sans" , sans-serif;
+}
+#content-tit{
+  height: 20px;
+  font-size: 1.5rem;
+  padding-left: 10%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  #cont-container
+   {
+    grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+    gap: 5px;
+  }
+    
+  #fd-carry {
+    grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+    gap: 15px;
+  }
+  #fd-full>p{
+    
+    font-size: 13px;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-family: "Alan Sans", sans-serif;
+    background-color: rgba(224, 223, 223, 0.1);
+    }
+    #app{
+      padding-top: 100px;
+    }
+
+}
+
+#cont-container>a{
+    text-decoration: none;
+}
+
+/* Style for each content item (each <Contents />) */
+
+
+#banner {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;       /* allows stacking on mobile */
+}
+#ban-con{
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    
+}
+
+
+
+#interface,
+#ban-con {
+  flex: 1 1 50%;         /* each takes 50% width on desktop */
+  box-sizing: border-box;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #interface,
+  #ban-con {
+    flex: 1 1 100%;      /* full width on small screens */
+  }
+}
+
+@media (max-width: 768px) {
+   #fd-up{
+    font-size:18px  ;    /* full width on small screens */
+  }
+}

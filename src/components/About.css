@@ -1,0 +1,91 @@
+#about-out{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Alan sans', sans-serif;
+    padding-top: 140px;
+}
+#abouttit{
+    padding: 10px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(19, 20, 19);
+    font-family: 'Alan sans', sans-serif;
+}
+#aboutimg{
+    border-radius: 50%;
+    box-shadow: 2px,2px,18px,0.7;
+    width: 250px;
+    height: 250px;
+    
+
+
+}
+#sidemain{
+    display: flex;
+    
+    align-items: center;
+    gap:30px;
+}
+.sideart{
+    min-width: 60%;
+    max-width: 70%;
+    height: auto;
+    
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 1.3rem;
+    
+}
+.art{
+    display: block;
+    padding:20px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.art>h2{
+    color: rgb(32, 32, 32);
+    padding: 20px;
+
+}
+
+@media (max-width:760px){
+    #about-out{
+    padding: 5px;
+    padding-top: 140px;
+    margin: 5px;
+}
+#abouttit{
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#aboutimg{
+
+    width: 100px;
+    height: 100px;
+    
+
+
+}
+#sidemain{
+
+    gap:10px;
+}
+.sideart{ 
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 13px;
+}
+.art{
+    padding:10px;
+    margin: 10px;
+    font-size: 10px;
+}
+.art>h2{
+    padding: 10px;
+}
+}

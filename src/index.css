@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Ensure the root element is at least the viewport height */
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  /* Removed height: 100% to allow window scrolling */
+  overflow-x: hidden; /* prevents horizontal scroll */
+  
+  /* Background styles */
+  background-image: url('https://images.pexels.com/photos/8941370/pexels-photo-8941370.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  /* Ensures background stays fixed during content scroll */
+  background-attachment: fixed; 
+  
+  font-family: Georgia, 'Alan sans', sans-serif;
+}

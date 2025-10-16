@@ -1,0 +1,145 @@
+/* Outer container */
+/* Outer container */
+#outer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 3%;
+  width: 100%;
+
+  gap: 10px;
+  /* CHANGE: Set to fixed by default */
+  position: fixed; /* <-- CHANGE */
+  top: 0;          /* <-- ADD */
+  left: 0;         /* <-- ADD */
+  background: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#nav-bar,
+#cart {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Sticky version (now applies style changes on scroll) */
+#outer.scrolled {
+  /* position: fixed; <--- REMOVE: already set above */
+  /* top: 0; <--- REMOVE: already set above */
+  /* left: 0; <--- REMOVE: already set above */
+  width: 100%;
+  height: 50px;
+  padding: 2px 3%; /* Reduced padding */
+  background: rgba(250, 250, 250,1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  justify-content: flex-start;
+}
+/* ... rest of the CSS remains the same ... */
+
+/* Hide nav and cart on scroll */
+
+#outer.scrolled #cart {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* Title styling */
+#tit a {
+  font-family: "Alan Sans", sans-serif;
+  color: #2aa030;
+  text-decoration: none;
+  font-size: 32px;
+  transition: font-size 0.3s ease;
+}
+
+#outer.scrolled #tit a {
+  font-size: 20px; /* smaller when scrolled */
+}
+
+/* Navbar links */
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 4px;
+  display: inline-block;
+  font-family: "Alan Sans", sans-serif;
+  font-size: 18px;
+  position: relative;
+}
+#outer.scrolled #nav-bar a {
+  font-size: 10px;
+}
+#outer.scrolled #nav-bar ul {
+  
+  gap: 25px;
+  
+  padding-left: 60px;
+  padding-top: 10px;
+}
+/* Underline hover effect */
+#nav-bar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#nav-bar a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Cart image */
+#cartimg {
+  width: 30px;
+  height: auto;
+}
+
+#cartimg:hover {
+  
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #tit a { font-size: 24px; }
+  #nav-bar a { font-size: 14px; }
+  #cartimg { width: 40px; }
+  #nav-bar ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+  #outer.scrolled {
+  /* position: fixed; <--- REMOVE: already set above */
+  /* top: 0; <--- REMOVE: already set above */
+  /* left: 0; <--- REMOVE: already set above */
+  width: 100%;
+  padding: 2px ; /* Reduced padding */
+  height: 50px;
+  
+  }
+  #outer.scrolled #nav-bar a {
+  font-size: 10px;
+}
+#outer.scrolled #nav-bar ul {
+  gap: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+}

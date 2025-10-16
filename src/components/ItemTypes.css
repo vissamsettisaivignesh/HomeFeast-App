@@ -1,0 +1,34 @@
+
+.items {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    align-items: stretch;
+}
+#veg-container{
+    padding-top: 140px;
+}
+@media (max-width: 768px) {
+  .items{
+    
+    grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+    gap: 5px;
+  }
+  #veg-container{
+    padding-top: 100px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .items {
+    width: 100%;
+  }
+  #veg-container{
+    padding-top: 100px;
+  }
+
+  
+}

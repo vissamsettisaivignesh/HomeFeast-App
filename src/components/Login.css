@@ -1,0 +1,373 @@
+
+#login-outline {
+    display: flex;
+    /* Corrected: Use justify-content for horizontal centering in Flexbox */
+    justify-content: center; 
+    
+    /* Ensure it takes full height so the centering works */
+    min-height: 100vh; 
+    width: 100%;
+    
+    /* Reduced padding-top here since align-items: center will handle vertical placement,
+       and the padding can be added as spacing around the content. */
+    padding: 140px 50px 50px 10px; 
+    box-sizing: border-box;
+}
+
+#Login-container {
+    
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+    padding: 30px;
+    background-color: rgba(243, 238, 238, 0.3);
+    width: 90%; 
+    max-width: 450px; 
+    height: fit-content;
+    margin-bottom: 10px; 
+    
+    
+    text-align: center;
+}
+
+#Login-container > h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Alan sans', sans-serif;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; 
+    padding: 10px 0;
+}
+
+.login-fields {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.login-fields .lbl {
+    font-weight: 600;
+    color: #555;
+    font-family: 'Alan sans', sans-serif;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.login-fields .inp {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #878686;
+    background-color: #f0efef;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.login-fields .inp:focus {
+    border-color: #1fa22d; /* Tomato red focus color */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(11, 11, 11, 0.2);
+}
+
+#login-box > button {
+    /* Button Styles */
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color:#1fa22d; 
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Alan sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#login-box > button:hover {
+    background-color: #2b6308;
+}
+
+#login-box > button:active {
+    transform: translateY(1px);
+}
+#endline{
+    font-family: 'Alan sans', sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    
+    background-color:rgba(255, 255, 255,0.7) ;
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(8, 8, 8);
+    font-size: 0.9rem;
+    
+}
+#endline>a{
+    padding: 7px;
+    
+    color:#070707;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Alan sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#endline>a:hover{
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+/* Registration page*/
+
+
+#reg-outline {
+    display: flex;
+    /* Corrected: Use justify-content for horizontal centering in Flexbox */
+    justify-content: center; 
+    
+    /* Ensure it takes full height so the centering works */
+    min-height: 100vh; 
+    width: 100%;
+    
+    /* Reduced padding-top here since align-items: center will handle vertical placement,
+       and the padding can be added as spacing around the content. */
+    padding: 100px 10px 10px 10px; 
+    box-sizing: border-box;
+}
+
+#reg-container {
+    
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+    padding: 30px;
+    background-color: rgba(243, 238, 238, 0.3);
+    width: 90%; 
+    max-width: 450px; 
+    height: fit-content;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+#reg-container > h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Alan sans', sans-serif;
+}
+
+#reg-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; 
+    padding: 10px 0;
+}
+
+.reg-fields {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.reg-fields .lbl {
+    font-weight: 600;
+    color: #555;
+    font-family: 'Alan sans', sans-serif;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.reg-fields .inp {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #848383;
+    background-color: #f0efef;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.reg-fields .inp:focus {
+    border-color: #1fa22d; /* Tomato red focus color */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(11, 11, 11, 0.2);
+}
+
+#reg-box > button {
+    /* Button Styles */
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color:#1fa22d; 
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Alan sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#reg-box > button:hover {
+    background-color: #2b6308;
+}
+
+#reg-box > button:active {
+    transform: translateY(1px);
+}
+#bottomline{
+    font-family: 'Alan sans', sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    
+    background-color:rgba(255, 255, 255,0.7) ;
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(8, 8, 8);
+    font-size: 0.9rem;
+    
+}
+
+
+
+/* Registration page*/
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN (Mobile) */
+/* ============================= */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  #login-outline, 
+  #reg-outline {
+    padding: 80px 20px 40px 20px;
+  }
+
+  #Login-container,
+  #reg-container {
+    width: 95%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  #Login-container > h1,
+  #reg-container > h1 {
+    font-size: 1.6rem;
+  }
+
+  .login-fields .inp,
+  .reg-fields .inp {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  #login-box > button,
+  #reg-box > button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+/* For large mobile screens */
+@media (max-width: 768px) {
+  #login-outline, 
+  #reg-outline {
+    padding: 150px 15px 30px 15px;
+  }
+
+  #Login-container,
+  #reg-container {
+    width: 95%;
+    max-width: 220px;
+    padding: 20px;
+  }
+
+  #Login-container > h1,
+  #reg-container > h1 {
+    font-size: 1.4rem;
+    
+  }
+
+  .login-fields .inp,
+  .reg-fields .inp {
+    padding: 9px 10px;
+    font-size: 0.9rem;
+  }
+
+  .login-fields .lbl,
+  .reg-fields .lbl {
+    font-size: 0.85rem;
+  }
+
+  #login-box > button,
+  #reg-box > button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  #endline,
+  #bottomline {
+    font-size: 0.85rem;
+    padding: 4px;
+  }
+}
+
+/* For small mobile screens (like 375px, 320px) */
+@media (max-width: 480px) {
+  #login-outline, 
+  #reg-outline {
+    padding: 150px 10px 20px 10px;
+  }
+
+  #Login-container,
+  #reg-container {
+    width: 100%;
+    padding: 18px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+  }
+
+  #Login-container > h1,
+  #reg-container > h1 {
+    font-size: 1.2rem;
+  }
+
+  .login-fields .inp,
+  .reg-fields .inp {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  #login-box > button,
+  #reg-box > button {
+    padding: 9px;
+    font-size: 0.95rem;
+  }
+
+  #endline,
+  #bottomline {
+    font-size: 0.8rem;
+    padding: 4px;
+  }
+
+  #endline > a,
+  #bottomline > a {
+    font-size: 0.85rem;
+  }
+}

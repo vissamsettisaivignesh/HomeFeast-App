@@ -1,0 +1,46 @@
+/* App.css or Contents.css */
+.contents-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.contents-item img {
+  
+  width: 100px;
+  height: 100px;
+  
+}
+.contents-item img :hover{
+  
+  width: 110px;
+  height: 110px;
+  
+}
+
+.contents-item p {
+  color: black;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .contents-item img {
+    width: 50px;
+    height: 50px;
+  }
+  .contents-item p {
+    font-size: 16px;
+    margin: 5px;
+  }
+  .contents-item {
+    
+    padding: 10px;
+    gap: 5px;
+  }
+}

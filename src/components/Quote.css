@@ -1,0 +1,25 @@
+#qt{
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    
+}
+#q1{
+
+    color:#222222;
+    font-size:50px;
+    font-family: "Alan Sans", sans-serif;
+    margin: 0;
+}
+@media (max-width: 768px) {
+  #q1 {
+    font-size: 30px; /* smaller quote */
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  #q1 {
+    font-size: 22px; /* even smaller for very small screens */
+  }
+}
